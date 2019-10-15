@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <html lang="en">
 
 <head>
@@ -59,6 +60,13 @@
       <h1 class="text-uppercase mb-0" id="welcome-message">Hello, world!</h1>
       <hr class="star-light">
       <h2 class="font-weight-light mb-0">Docker - CI/CD - Automated test</h2>
+	  <h2 class="font-weight-light mb-0">
+	  <%
+		// Nombre de la maquina
+		java.net.InetAddress address = java.net.InetAddress.getLocalHost();
+		out.println(address.getHostName());
+	  %>
+	  </h2>
     </div>
   </header>
 
