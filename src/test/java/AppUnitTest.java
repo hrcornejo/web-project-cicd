@@ -14,6 +14,7 @@ public class AppUnitTest {
 	@Test
 	public void helloWorldOk() {
 		//assertEquals("Hello Hector", new Controller().helloWorld("Hector"));
-		assertEquals("Hello Hector", "Hello Hector");
+		//assertEquals("Hello Hector", "Hello Hector");
+		new Controller().helloWorld("Hector");
 	}
 }
